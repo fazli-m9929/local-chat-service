@@ -1,0 +1,11 @@
+.venv
+
+Datasets
+
+__pycache__
+
+saved_values
+
+*.csv
+
+model
