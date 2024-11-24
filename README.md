@@ -119,17 +119,16 @@ You can interact with the service programmatically via Python:
    ```
    .
    ├── app/
+   │   ├── api/
+   │   │    ├── chat.py                     # FastAPI chat endpoint
+   │   │    └── __init__.py
    │   ├── model/                      # Directory for storing the local model
    │   │   └── Dorna-Llama3-8B-Instruct/
    │   ├── services/
    │   │   ├── __init__.py
    │   │   ├── chat_service.py         # Handles chat generation logic
    │   │   └── model_service.py        # Manages model loading and inference
-   │   └── __init__.py
-   ├── api/
-   │   ├── chat.py                     # FastAPI chat endpoint
-   │   └── __init__.py
-   ├── main.py                         # Entry point for running the server
+   │   └── main.py                         # Entry point for running the server
    ├── requirements.txt                # List of dependencies
    └── README.md                       # Documentation
    ```
@@ -141,10 +140,12 @@ You can interact with the service programmatically via Python:
 The following packages are required to run the service:
 
    ```
-   fastapi
-   uvicorn
-   torch
-   transformers
+      fastapi
+      uvicorn
+      torch
+      torchvision
+      torchaudio
+      transformers
    ```
 
 Install these via `pip install -r requirements.txt`.
