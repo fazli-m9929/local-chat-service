@@ -15,7 +15,7 @@ This project provides a simple FastAPI-based service for generating chat respons
 1. **Clone the Repository**
 
    ```
-   git clone https://github.com/your-repo-name/chat-service.git
+   git clone https://github.com/fazli-m9929/local-chat-service.git
    cd chat-service
    ```
 
