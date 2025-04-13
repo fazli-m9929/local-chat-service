@@ -1,6 +1,6 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
-from services.chat_service import ChatService
+from ..services.chat_service import ChatService
 from typing import List
 from pathlib import Path
 import os

@@ -36,7 +36,7 @@ This project provides a simple FastAPI-based service for generating chat respons
    Start the FastAPI server:
 
    ```
-   python main.py
+   python -m app.main
    ```
 
    The API will be available at `http://127.0.0.1:7000`.
