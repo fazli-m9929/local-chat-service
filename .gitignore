@@ -9,3 +9,5 @@ saved_values
 *.csv
 
 model
+
+*.conf

@@ -1,0 +1,19 @@
+services:
+  local-chat-server:
+    container_name: fastapi-chat-server
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: local-chat-server:dev
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              capabilities: [gpu]
+    ports:
+      - "7000:7000"
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+    restart: unless-stopped
+    
