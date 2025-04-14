@@ -19,7 +19,6 @@ COPY pip.conf /etc/pip.conf
 WORKDIR /app
 
 COPY . .
-COPY requirements.txt .
 
 RUN pip install --no-cache-dir -r requirements.txt
 RUN rm -fr requirements.txt /etc/pip.conf
